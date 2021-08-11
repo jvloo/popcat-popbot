@@ -8,4 +8,4 @@ You can open unlimited browsers to run the clickers until you drained your PC's 
 
 <img src="https://i.imgur.com/7NQuIX1.png">
 
-DICLAIMER: The author is not responsible for any loss or damage of your personal assets including your laptops, PCs and brain XD
+DISCLAIMER: The author is not responsible for any loss or damage of your personal assets including your laptops, PCs and brain XD
