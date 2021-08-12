@@ -1,4 +1,4 @@
-## Let's fight for Malaysia's Popcat world ranking
+## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
 ### 1. Python+Selenium
 Auto-clicker for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> made using Python 3 + Selenium.
