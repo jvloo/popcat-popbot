@@ -7,7 +7,7 @@ You can open unlimited browsers to run the clickers until you drained your PC's 
 ### 1. Python+Selenium
 - Simulate human click
 - Send 300~400 clicks per 30 seconds
-- See the file: autoclicker-v1.py
+- See the file: clicker-v1.py
 
 ### 2. Paste JS script in Console
 - Directly send clicks via the Popcat's API.
