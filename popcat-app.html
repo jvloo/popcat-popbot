@@ -1,0 +1,234 @@
+<template>
+  <div id="app">
+    <img class="title" src="~@/assets/popcat.svg" alt="POPCAT" >
+    <cat :open="open" :counter="counter" :bot="bot"/>
+    <leaderboard :accumulator="accumulator" :location="location"/>
+
+    <share />
+    <twitter-button />
+  </div>
+</template>
+
+<script>
+import { getCookie, setCookie } from './lib/cookies'
+import Cat from './components/Cat.vue'
+import Leaderboard from './components/Leaderboard.vue'
+import Share from './components/Share.vue'
+import TwitterButton from './components/TwitterButton.vue'
+import { Howl } from 'howler'
+const axios = require('axios').default
+
+export default {
+  name: 'App',
+  components: { Cat, Leaderboard, Share, TwitterButton },
+  data: function () {
+    return {
+      open: false,
+      pop_sound_i: 0,
+      counter: 0,
+      accumulator: 0,
+      pop_sounds: [
+        'pops/pop1',
+        'pops/pop2',
+        'pops/pop3',
+        'pops/pop4'
+      ],
+      pop_howls: [],
+      sequential_max_pops: 0,
+      bot: false,
+      location: null,
+      interval: false,
+      token: ''
+    }
+  },
+
+  created () {
+    // Add pop and unpop event listeners to body
+    document.addEventListener('pointerup', this.p)
+    document.addEventListener('keyup', this.p)
+    document.addEventListener('pointerdown', this.op)
+    document.addEventListener('keydown', this.op)
+
+    // If user already has pops, get them
+    this.counter = parseInt(getCookie('pop_count'), 10)
+
+    if (isNaN(this.counter)) { this.counter = 0 }
+
+    // If the user has a bot cookie set, use it
+    this.bot = getCookie('bot')
+
+    // Load the pop sounds into howler
+    this.pop_sounds.forEach((popPath, i) => {
+      this.pop_howls[i] = new Howl({
+        src: [`${popPath}.ogg`, `${popPath}.mp3`]
+      })
+    })
+
+    const country = getCookie('country')
+    if (!country) {
+      this.cloudflareGeo()
+    } else {
+      this.location = country
+    }
+  },
+
+  methods: {
+    p () {
+      /** Close the mouth in 25msec */
+      setTimeout(() => { this.open = false }, 25)
+    },
+
+    op (e) {
+      if (e.repeat) {
+        return
+      }
+
+      this.open = true
+
+      this.pop_howls[this.pop_sound_i].play()
+
+      /** Change index for next pop noise to a different random index not equal to
+      * the current one */
+      this.pop_sound_i = [0, 1, 2, 3].filter(
+        x => x !== this.pop_sound_i
+      )[Math.floor(Math.random() * (this.pop_sounds.length - 1))]
+
+      this.counter++
+      this.accumulator++
+
+      // Set the pop count cookie
+      setCookie('pop_count', this.counter, 365)
+
+      // if we haven't started the stat-send interval, start it now.
+      if (!this.interval) {
+        this.interval = true
+        this.sendStats()
+        // Setup periodic statistic call to server
+        setInterval(this.sendStats, 1000 * 30)
+      }
+    },
+
+    cloudflareGeo () {
+      axios.get('https://popcat.click/cdn-cgi/trace')
+        .then((resp) => {
+          const countryRegex = /^loc=(.*)$/gm
+          this.location = countryRegex.exec(resp.data)[1]
+        })
+    },
+
+    async sendStats () {
+      /** If the client has been flagged as a bot then we just return */
+      if (this.bot) {
+        return
+      }
+
+      /** If the accumulator is empty (0) we have no pops to report to the server so we just return */
+      if (this.accumulator === 0) {
+        return
+      }
+
+      /** Get a recaptcha-v3 token */
+      await this.$recaptchaLoaded()
+      const recaptchaResponseToken = await this.$recaptcha('pop')
+
+      /** Make the request to the server.
+        * If it's successful, we reset the accumulator.
+        * If it's unsuccessful, we simply log the error.
+        * If more than 800 pops are in the accumulator somehow, we only report 800
+        * as that is the limit imposed by the server. */
+
+      let tokenString = ''
+      if (this.token) {
+        tokenString = `&token=${this.token}`
+      }
+
+      axios.post(
+          `${process.env.VUE_APP_ENDPOINT_POP}?pop_count=${this.accumulator > 800 ? 800 : this.accumulator}&captcha_token=${recaptchaResponseToken}${tokenString}`
+      ).then(
+        (res) => {
+          if (this.accumulator >= 800) {
+            this.sequential_max_pops += 1
+            if (this.sequential_max_pops > 10) { // 20*30 seconds = 5 minutes
+              this.bot = true
+              setCookie('bot', true, 0.5) // Cookie lasts for 12 hours
+            }
+          } else {
+            this.sequential_max_pops = 0
+            this.bot = false
+          }
+          this.accumulator = 0
+          if (res.data && res.data.Location && res.data.Location.Code) {
+            this.location = res.data.Location.Code
+            setCookie('country', res.data.Location.Code, 0.5)
+          }
+          if (res.data.Token) {
+            this.token = res.data.Token
+          }
+        }
+      ).catch(
+        (e) => { }
+      )
+    }
+  }
+}
+</script>
+
+<style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, #app {
+  height:100%;
+  overflow:hidden;
+}
+body {
+  height:100%;
+  margin:0;
+  background-color: #bdaa90;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  position:relative;
+  overflow:hidden;
+  font-family: 'Nunito', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body::before{
+  content:"";
+  position:absolute;
+  width:120%;height:120%;
+  top:50%;left:50%;
+  z-index:-1;
+  transform:translate(-50%,-50%) rotate(-3deg);
+  background-image: url("~@/assets/bg.jpg");
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.title {
+  margin:2em 0 0 0;
+  width: min(600px,80%);
+}
+
+@media(min-width:1000px) {
+  .title {
+    width: min(400px,80%);
+  }
+}
+
+.grecaptcha-badge { visibility: hidden; }
+</style>
