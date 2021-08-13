@@ -5,7 +5,7 @@ Auto-clicker for <a href="https://popcat.click/" target="_blank">PopCat challeng
 You can open unlimited browsers to run the clickers until you drained your PC's CPU 😜
 
 ### 1. Python+Selenium
-- Mimic human click
+- Simulate human click
 - Send 300~400 clicks per 30 seconds
 - See the file: autoclicker-v1.py
 
