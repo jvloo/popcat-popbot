@@ -18,7 +18,7 @@ You can open unlimited browsers to run the clickers until you drained your PC's 
 - If send 800 clicks or above, system will record penalty +10
 - If hit 10 penalty, system will record cookie and mark you as bot. No further click will be recorded.
 
-See the file: popcat-app.js
+See the file: popcat-app.html
 
 ---
 
