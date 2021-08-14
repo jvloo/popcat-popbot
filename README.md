@@ -2,7 +2,7 @@
 
 JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge</a>
 
-You can open unlimited browsers to run the clickbot script until you drained your PC's CPU 😜
+You can open unlimited browsers to run the clickbot script (Python version) until you drained your PC's CPU 😜
 
 *‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉*
 
@@ -24,7 +24,7 @@ You can open unlimited browsers to run the clickbot script until you drained you
 
 **See the file: clickbot-v2.js**
 
-## How to Use
+## How to Use (Simple)
 
 1. Copy all content of the file "clickbot-v2.min.js"
 2. Visit <a href="https://popcat.click/" target="_blank">https://popcat.click/</a>
@@ -35,6 +35,14 @@ You can open unlimited browsers to run the clickbot script until you drained you
 *Navigate to "Network" tab to check if your API request accepted or rejected (in red text)*
 
 <img src="https://i.imgur.com/UFYw0hw.png">
+
+## How to Use (Advanced - Python version)
+
+1. Make sure you have install Python3 with PIP (Python package manager)
+2. Install selenium package via PIP
+3. Double click to run **clickbot-v2.py**
+
+*You can open multiple selenium browser if your PC can support*
 
 ## Credit
 

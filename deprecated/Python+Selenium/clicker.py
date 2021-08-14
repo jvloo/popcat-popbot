@@ -1,19 +1,7 @@
 from selenium import webdriver
 
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-
 driver = webdriver.Edge("lib\edgedriver_win32\msedgedriver.exe")
-
-def navigate(url):
-    driver.get(url)
-
-def click(target):
-    WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.ID, target)))
-    driver.find_element_by_id(target).click()
-
-navigate("https://popcat.click/")
+driver.get("https://popcat.click/")
 
 while True:
-    click("app")
+    driver.execute_script('const app=document.querySelector("#app").__vue__;function click(){app.accumulator=800,app.bot=!1,app.sequential_max_pops=0,pop()}function pop(){for(var e=0;e<=800;e++)setTimeout(()=>{document.dispatchEvent(new KeyboardEvent("keydown",{key:"g",ctrlKey:!0}))},5)}document.cookie="country=MY;expires=Sat, 31 Dec 2022 12:00:00 UTC;path=/",document.dispatchEvent(new KeyboardEvent("keydown",{key:"g",ctrlKey:!0})),setInterval(()=>{click()},29e3);')
