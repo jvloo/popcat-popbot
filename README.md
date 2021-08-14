@@ -2,8 +2,6 @@
 
 JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge</a>
 
-You can open unlimited browsers to run the clickbot script (Python version) until you drained your PC's CPU 😜
-
 *‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉*
 
 <img src="https://i.imgur.com/688fQrN.png">
@@ -13,6 +11,10 @@ You can open unlimited browsers to run the clickbot script (Python version) unti
 - API rate limit 800 clicks per 30 seconds (So far I can't bypass this)
 - If send 800 clicks or above, system will only record 800 clicks & spam score +1
 - If hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
+
+```diff
+- Only allow 1 browser per device. API rate limit is enforced per IP address.
+```
 
 **See the file: popcat-App.html**
 
@@ -49,6 +51,7 @@ You can open unlimited browsers to run the clickbot script (Python version) unti
 Special thanks to senpai "Lim Shang Yi" (FB) for the inspiration.
 
 Original FB post: https://m.facebook.com/groups/developerkaki/permalink/1487647504914491/
+Latest FB post: https://www.facebook.com/groups/developerkaki/permalink/1489535604725681
 
 ## Disclaimer
 
