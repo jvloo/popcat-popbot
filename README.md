@@ -1,6 +1,11 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
-JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge</a>
+This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> with anti-spam prevention.
+
+The script accesses the PopCat's Vue app instance directly and manipulate the key variables which contributes to click counter, spam counter and API call, so to ensure that:
+
+1. You hit the max 800 clicks per 30s (according to the API rate limit)
+2. You won't get marked as bot
 
 *‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉*
 
@@ -8,9 +13,9 @@ JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge
 
 ## About Popcat Rules
 
-- API rate limit 800 clicks per 30 seconds (So far I can't bypass this)
-- If send 800 clicks or above, system will only record 800 clicks & spam score +1
-- If hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
+- API rate limit = 800 clicks per 30 seconds (So far I can't bypass this)
+- If you send 800 clicks or above, system will only record 800 clicks & spam score +1
+- If you hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
 
 ```diff
 - Only allow 1 browser per device. API rate limit is enforced per IP address.
@@ -43,8 +48,6 @@ JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge
 1. Make sure you have install Python3 with PIP (Python package manager)
 2. Install selenium package via PIP
 3. Double click to run **clickbot-v2.py**
-
-*You can open multiple selenium browser if your PC can support*
 
 ## Credit
 
