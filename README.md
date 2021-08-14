@@ -50,7 +50,7 @@ JS clickbot for <a href="https://popcat.click/" target="_blank">PopCat challenge
 
 Special thanks to senpai "Lim Shang Yi" (FB) for the inspiration.
 
-Original FB post: https://m.facebook.com/groups/developerkaki/permalink/1487647504914491/
+Original FB post: https://www.facebook.com/groups/developerkaki/permalink/1487647504914491
 
 Latest FB post: https://www.facebook.com/groups/developerkaki/permalink/1489535604725681
 
