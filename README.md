@@ -17,11 +17,7 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 - If you send 800 clicks or above, system will only record 800 clicks & spam score +1
 - If you hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
 
-```diff
-- Only allow 1 browser per device. API rate limit is enforced per IP address.
-```
-
-> **Update:** Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
+> **UPDATE:** Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
 > unless you clear the cookie & refresh the browser (reload the script).
 > The bot cookie is only useful for them to record you as bot when you refresh the browser.
 > 
@@ -29,32 +25,47 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 
 **See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">popcat-App.html</a>**
 
-## About Clickbot script V2
-
-- Directly send clicks via the Popcat's API.
-- Send 800 clicks per 30 seconds
-- Clear spam scores automatically
-
-**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v2.js" target="_blank">clickbot-v2.js</a>**
-
 ## How to Use (Simple)
 
-1. Copy all content of the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v2.min.js" target="_blank">clickbot-v2.min.js</a>
+> **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
+
+1. Copy all content of the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v3.min.js" target="_blank">clickbot-v3.min.js</a> *OR* <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v3-with-pop.min.js" target="_blank">clickbot-v3-with-pop.min.js</a> (with click counter)
 2. Visit <a href="https://popcat.click/" target="_blank">https://popcat.click/</a>
 3. Tap `F12` to open browser devtool & navigate to "Console" tab
 4. Tap `Ctrl` + `v` to paste all content into console
 5. Tap `Enter` to run the script
-
-*Navigate to "Network" tab to check if your API request accepted or rejected (in red text)*
+6. (Optional) Navigate to "Network" tab to check if your API request accepted or rejected (in red text)
 
 <img src="https://i.imgur.com/UFYw0hw.png">
 
 ## How to Use (Advanced - Python version)
 
+> **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
+
 1. Make sure you have install Python3 with PIP (Python package manager)
 2. Install selenium package via PIP
 3. <a href="https://github.com/jvloo/popcat-clicker/archive/refs/tags/v2.zip" target="_blank">Click here to download script</a>
-4. Extract files & double click **clickbot-v2.py** to run 
+4. Extract files & double click **"clickbot-v2.py"** to run
+
+## Changelog
+
+### - Clickbot script V3
+
+- Send 800 clicks per 30 seconds
+- Directly send clicks via the Popcat's API endpoint
+
+**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/deprecated/JS/v3/clickbot-v3.js" target="_blank">clickbot-v3.js</a>**
+
+
+### - Clickbot script V2 (DEPRECATED)
+
+> **UPDATE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to V3 which solves the issue.
+
+- Send 800 clicks per 30 seconds
+- Use PopCat native `sendStats()` function
+- Clear spam scores automatically
+
+**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/deprecated/JS/v2/clickbot-v2.js" target="_blank">clickbot-v2.js</a>**
 
 ## Screenshot
 
