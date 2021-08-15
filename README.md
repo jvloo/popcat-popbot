@@ -55,10 +55,6 @@ Still working after running over 12 hours:
 
 <img src="https://i.imgur.com/y8uFBvn.png">
 
-*The screenshot is captured on Selenium browser which fails on CORS policy sometimes.*
-
-*Recommended to use a Chrome browser with the JS script instead.*
-
 ## Credit
 
 Special thanks to senpai "Lim Shang Yi" (FB) for the inspiration.
