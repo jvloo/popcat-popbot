@@ -86,3 +86,12 @@ Latest FB post: https://www.facebook.com/groups/developerkaki/permalink/14895356
 ## Disclaimer
 
 The author is not responsible for any loss or damage of your personal assets including your laptops, PCs and brain XD
+
+## Attribution & License
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+You must give appropriate credit, provide a link to the original GitHub repository, and indicate if changes were made. Please includes the below line in your redistributed and/or modified script:
+
+> Original author: Xavier Loo (https://github.com/jvloo/popcat-clicker)
+
