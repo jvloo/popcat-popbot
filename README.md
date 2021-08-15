@@ -49,6 +49,12 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 2. Install selenium package via PIP
 3. Double click to run **clickbot-v2.py**
 
+## Screenshot
+
+Still working after running over 12 hours:
+
+<img src="https://i.imgur.com/y8uFBvn.png">
+
 ## Credit
 
 Special thanks to senpai "Lim Shang Yi" (FB) for the inspiration.
