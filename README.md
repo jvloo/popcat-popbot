@@ -11,20 +11,6 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 
 <img src="https://i.imgur.com/688fQrN.png">
 
-## About Popcat Rules
-
-- API rate limit = 800 clicks per 30 seconds (So far I can't bypass this)
-- If you send 800 clicks or above, system will only record 800 clicks & spam score +1
-- If you hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
-
-> **UPDATE:** Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
-> unless you clear the cookie & refresh the browser (reload the script).
-> The bot cookie is only useful for them to record you as bot when you refresh the browser.
-> 
-> You may check the script extracted from <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">PopCat's App.vue (line 152)</a>. 
-
-**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">popcat-App.html</a>**
-
 ## How to Use (Simple)
 
 > **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
@@ -46,6 +32,20 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 2. Install selenium package via PIP
 3. <a href="https://github.com/jvloo/popcat-clicker/archive/refs/tags/v2.zip" target="_blank">Click here to download script</a>
 4. Extract files & double click **"clickbot-v2.py"** to run
+
+## About Popcat Rules
+
+- API rate limit = 800 clicks per 30 seconds (So far I can't bypass this)
+- If you send 800 clicks or above, system will only record 800 clicks & spam score +1
+- If you hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
+
+> **UPDATE:** Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
+> unless you clear the cookie & refresh the browser (reload the script).
+> The bot cookie is only useful for them to record you as bot when you refresh the browser.
+> 
+> You may check the script extracted from <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">PopCat's App.vue (line 152)</a>. 
+
+**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">popcat-App.html</a>**
 
 ## Changelog
 
