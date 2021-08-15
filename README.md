@@ -15,7 +15,7 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 
 > **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
 
-1. Copy all content of the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v3.min.js" target="_blank">clickbot-v3.min.js</a> *OR* <a href="https://github.com/jvloo/popcat-clicker/blob/main/clickbot-v3-with-pop.min.js" target="_blank">clickbot-v3-with-pop.min.js</a> (with click counter)
+1. Copy all content of the file: <a href="https://raw.githubusercontent.com/jvloo/popcat-clicker/main/clickbot-v3.min.js" target="_blank">clickbot-v3.min.js</a> *OR* <a href="https://raw.githubusercontent.com/jvloo/popcat-clicker/main/clickbot-v3-with-pop.min.js" target="_blank">clickbot-v3-with-pop.min.js</a> (with click counter)
 2. Visit <a href="https://popcat.click/" target="_blank">https://popcat.click/</a>
 3. Tap `F12` to open browser devtool & navigate to "Console" tab
 4. Tap `Ctrl` + `v` to paste all content into console
