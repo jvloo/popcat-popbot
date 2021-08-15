@@ -1,6 +1,6 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
-This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that can bypass bot detection.
+This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that directly bypass bot detection.
 
 The script accesses the PopCat's Vue app instance directly and manipulate the key variables which contributes to click counter, spam counter and API call, so to ensure that:
 
@@ -28,8 +28,8 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 
 > **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
 
-1. Make sure you have install Python3 with PIP (Python package manager)
-2. Install selenium package via PIP
+1. Make sure you have install Python 3 with PIP (Python package manager)
+2. Install Selenium package via PIP
 3. <a href="https://github.com/jvloo/popcat-clicker/archive/refs/tags/v2.zip" target="_blank">Click here to download script</a>
 4. Extract files & double click **"clickbot-v2.py"** to run
 
