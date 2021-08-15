@@ -1,6 +1,6 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
-> **KNOWN ISSUE:** Proven working on PC browser, but failed on Phone browser. I'm troubleshooting now, please stay tuned to the updates 😉
+> **KNOWN ISSUE:** Some reported that v3.0 might not working on a Mobile browser. I have written v3.1 for Mobile support and it's now under testing. You can get the script here and do let me know if the issue still persist: <a href="https://gist.github.com/jvloo/f52b7a264dcf81241182d31c94d1ef5c" target="_blank">clicker-v3.1-dev.js</a>
 
 This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that directly bypass bot detection.
 
