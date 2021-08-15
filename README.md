@@ -1,5 +1,7 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
+> **KNOWN ISSUE:** Proven working on PC browser, but failed on Phone browser. I'm troubleshooting now, please stay tuned to the updates 😉
+
 This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that directly bypass bot detection.
 
 The script accesses the PopCat's Vue app instance directly and manipulate the key variables which contributes to click counter, spam counter and API call, so to ensure that:
