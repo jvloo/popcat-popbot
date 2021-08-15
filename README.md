@@ -59,11 +59,13 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 
 ### - Clickbot script V2 (DEPRECATED)
 
-> **UPDATE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to V3 which solves the issue.
-
 - Send 800 clicks per 30 seconds
 - Use PopCat native `sendStats()` function
 - Clear spam scores automatically
+
+> **UPDATE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to V3 which solves the issue.
+> 
+> <img width="50%" src="https://i.imgur.com/gbeubxD.jpg">
 
 **See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/deprecated/JS/v2/clickbot-v2.js" target="_blank">clickbot-v2.js</a>**
 
