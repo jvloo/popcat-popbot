@@ -12,7 +12,7 @@
     "use strict";
     console.clear();
 
-    var jq, recaptcha, jwt, wait, num;
+    var jq, recaptcha, jwt, wait, num, country;
 
     /** Import jQuery script */
     jq = document.createElement("script");
@@ -49,8 +49,10 @@
                 num = parseInt($(".counter").text().replace(/,/g, ""));
                 /** Increment pop count */
                 pop(num = isNaN(num) ? 0 : num);
+                /** Get country code */
+                country = e.Location.Code=="MY" ? "Malaysia" : e.Location.Code;
                 /** Log success message */
-                console.log(`%cSuccessfully sent 800 clicks to ${e.Location.Name}. Total: ${(num+800).toLocaleString("en")}`, "color:green");
+                console.log(`%cSuccessfully sent 800 clicks to ${country}. Total: ${(num+800).toLocaleString("en")}`, "color:green");
                 console.log('Waiting for next request in 30s..');
             })
             .fail(function(e){
