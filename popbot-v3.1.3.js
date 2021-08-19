@@ -6,7 +6,7 @@
     @author  Xavier Loo <xavier@senangprint.com>
     
     - Get Started: https://github.com/jvloo/popcat-popbot/blob/main/README.md
-    - Troubleshoot Guide: https://github.com/jvloo/popcat-popbot/issues/1
+    - Troubleshoot Guide: https://github.com/jvloo/popcat-popbot/wiki
 **/
 (() => {
     "use strict";
