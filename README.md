@@ -53,6 +53,15 @@ This is a JS auto-click script for <a href="https://popcat.click/" target="_blan
 
 ### - Clickbot script V3
 
+- Added mobile browser support
+- Added errors reporting message
+- See which country you're targeting
+
+**See the file: <a href="https://gist.github.com/jvloo/f52b7a264dcf81241182d31c94d1ef5c" target="_blank">clickbot-v3.1-dev.js</a>**
+
+
+### - Clickbot script V3
+
 - Send 800 clicks per 30 seconds
 - Directly send clicks via the Popcat's API endpoint
 
