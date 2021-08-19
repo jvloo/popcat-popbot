@@ -24,9 +24,12 @@ _‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉 *at time of writing script_
 
 ✅ Support PC & Mobile browsers.
 
-❗❗ Encounter errors? Refer to https://github.com/jvloo/popcat-clicker/issues/1
+❗❗ <a href="https://github.com/jvloo/popcat-popbot/wiki/Troubleshoot:-429---Too-Many-Requests-Request-Too-Often">Troubleshoot: 429 Too Many Requests Request Too Often</a>
 
-❗❗ Issue still not resolved? Report at https://github.com/jvloo/popcat-clicker/issues/new
+❗❗ <a href="https://github.com/jvloo/popcat-popbot/wiki/Troubleshoot:-CORS-Cross-Origin-Request-Blocked-at-'https:---leaderboard.popcat.click'">Troubleshoot: CORS Cross Origin Request Blocked at 'https: leaderboard.popcat.click'</a>
+
+
+❗❗ Issue still not resolved? <a href="https://github.com/jvloo/popcat-clicker/issues/new">Create an issue</a>
 
 
 ## How to Use (Python version)
