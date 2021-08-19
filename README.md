@@ -13,7 +13,7 @@ This is a JS auto-click script for <a href="https://popcat.click/" target="_blan
 
 > **NOTICE:** Only 1 browser allowed per device. API rate limit is enforced per IP address.
 
-1. Copy all content of the file: <a href="https://gist.github.com/jvloo/f52b7a264dcf81241182d31c94d1ef5c" target="_blank">clickbot-v3.1-dev.js</a>
+1. Copy all content of the file: <a href="https://github.com/jvloo/popcat-popbot/blob/main/popbot-v3.1.3.js" target="_blank">clickbot-v3.1.3.js</a> (OR minified <a href="https://github.com/jvloo/popcat-popbot/blob/main/popbot-v3.1.3.min.js" target="_blank">clickbot-v3.1.3.min.js</a>)
 2. Visit <a href="https://popcat.click/" target="_blank">https://popcat.click/</a>
 3. Tap `F12` to open browser devtool & navigate to "Console" tab
 4. Tap `Ctrl` + `v` to paste all content into console
