@@ -24,7 +24,10 @@ _‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉 *at time of writing script_
 
 ✅ Support PC & Mobile browsers.
 
-❗❗ Troubleshoot guide: https://github.com/jvloo/popcat-clicker/issues/1
+❗❗ Encounter errors? Refer to https://github.com/jvloo/popcat-clicker/issues/1
+
+❗❗ Issue still not resolved? Report at https://github.com/jvloo/popcat-clicker/issues/new
+
 
 ## How to Use (Python version)
 
@@ -51,7 +54,7 @@ _‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉 *at time of writing script_
 
 ## Changelog
 
-### - Clickbot script V3.1
+### - Clickbot script v3.1
 
 - Added mobile browser support
 - Added error reporting messages
@@ -60,7 +63,7 @@ _‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉 *at time of writing script_
 **See the file: <a href="https://github.com/jvloo/popcat-popbot/blob/main/popbot-v3.1.3.js" target="_blank">popbot-v3.1.3.js</a>**
 
 
-### - Clickbot script V3
+### - Clickbot script v3
 
 - Send 800 clicks per 30 seconds
 - Directly send clicks via the Popcat's API endpoint
@@ -68,13 +71,13 @@ _‼️ MALAYSIA IS 2TH PLACE NOW ‼️ 🎉🎉 *at time of writing script_
 **See the file: <a href="https://github.com/jvloo/popcat-popbot/blob/main/version/JS/v3/clickbot-v3.0.0.js" target="_blank">clickbot-v3.js</a>**
 
 
-### - Clickbot script V2 (DEPRECATED)
+### - Clickbot script v2 (DEPRECATED)
 
 - Send 800 clicks per 30 seconds
 - Use PopCat native `sendStats()` function
 - Clear spam scores automatically
 
-> **NOTE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to V3 which solves the issue.
+> **NOTE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to v3 which solves the issue.
 > 
 > <img width="50%" src="https://i.imgur.com/gbeubxD.jpg">
 
