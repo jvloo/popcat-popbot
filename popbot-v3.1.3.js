@@ -56,7 +56,7 @@ function send() {
             .fail(function(e){
                 /** Log error message */
                 switch(e.status){
-                    case 503: console.log("%cFailed due to server is busy. Retrying in 30s..", "color:red"); break;
+                    case 503: console.log("%cFailed due to server error. Retrying in 30s..", "color:red"); break;
                     case 429: console.log("%cFailed due to request too often. Retrying in 30s..", "color:red");
                               console.log("%cReminder: Please run only 1 PopCat per device/IP.", "color:yellow"); break;
                     default:  console.log(`%cFailed due to error ${e.responseText}. Retrying in 30s..`, "color:red");
