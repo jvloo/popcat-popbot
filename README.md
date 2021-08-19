@@ -24,6 +24,8 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 5. Tap `Enter` to run the script
 6. (Optional) Navigate to "Network" tab to check if your API request accepted or rejected (in red text)
 
+See https://github.com/jvloo/popcat-clicker/issues/1 to troubleshoot errors.
+
 <img src="https://i.imgur.com/UFYw0hw.png">
 
 ## How to Use (Advanced - Python version)
