@@ -1,5 +1,7 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
+> **Latest Update <a href="https://github.com/jvloo/popcat-popbot/blob/main/popbot-v3.1.3.js" target="_blank">v3.1.3</a>:** Added Mobile browser support, improved error messages & fixed minor bugs
+
 This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that could bypass bot detection. The script accesses the PopCat's API endpoint and send clicks directly, so to ensure that:
 
 1. You hit the max 800 clicks per 30s (according to the API rate limit)
