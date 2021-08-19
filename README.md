@@ -1,8 +1,6 @@
 ## Let's fight for Malaysia's Popcat world ranking 🇲🇾
 
-This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that could bypass bot detection.
-
-The script accesses the PopCat's API endpoint and send clicks directly, so to ensure that:
+This is a JS auto-click script for <a href="https://popcat.click/" target="_blank">PopCat challenge</a> that could bypass bot detection. The script accesses the PopCat's API endpoint and send clicks directly, so to ensure that:
 
 1. You hit the max 800 clicks per 30s (according to the API rate limit)
 2. You won't get marked as bot (100% works - Direct send clicks to API endpoint)
