@@ -51,11 +51,11 @@ This is a JS auto-click script for <a href="https://popcat.click/" target="_blan
 
 ## Changelog
 
-### - Clickbot script V3
+### - Clickbot script V3.1
 
 - Added mobile browser support
 - Added errors reporting message
-- See which country you're targeting
+- See which country you're targeting & total pops
 
 **See the file: <a href="https://gist.github.com/jvloo/f52b7a264dcf81241182d31c94d1ef5c" target="_blank">clickbot-v3.1-dev.js</a>**
 
