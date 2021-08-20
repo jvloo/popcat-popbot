@@ -107,5 +107,5 @@ The author is not responsible for any loss or damage of your personal assets inc
 
 Please includes the line below in your redistributed and/or modified script:
 
-> Original author: Xavier Loo (https://github.com/jvloo/popcat-clicker)
+> Original author: Xavier Loo (https://github.com/jvloo/popcat-popbot)
 
